@@ -8,7 +8,7 @@ legend.fancybox: true
 ## ***************************************************************************
 ## push_to_bg = '#DDDDDD'
 ## dark_gray = '#3b3b3b'
-## gray = "#9c9ca1"
+## gray = 'gray'
 ## light_gray = '#BFBFBF'
 ## dark_blue = '#072ea5'
 ## blue = "#5790fc"
@@ -25,22 +25,27 @@ legend.fancybox: true
 
 patch.facecolor: gray
 
+
+
 ## https://arxiv.org/abs/2107.02270 - Color source
 ## https://github.com/mpetroff/accessible-color-cycles
-axes.prop_cycle: cycler('color', ["#9c9ca1", "#5790fc", "#f89c20", "#e42536", "#964a8b", "#7a21dd"])
+axes.prop_cycle: cycler(color=["#5790fc", "#f89c20", "#e42536", "#964a8b", "#9c9ca1", "#7a21dd"])
+# axes.prop_cycle: cycler(color=["#1845fb", "#ff5e02", "#c91f16", "#c849a9", "#adad7d", "#86c8dd", "#578dff", "#656364"])
+# axes.prop_cycle: cycler(color=["#3f90da", "#ffa90e", "#bd1f01", "#94a4a2", "#832db6", "#a96b59", "#e76300", "#b9ac70", "#717581", "#92dadd"])
+
 axes.facecolor: ffffff  # white
-axes.spines.top: False
-axes.spines.right: False
+axes.spines.top: True
+axes.spines.right: True
 
 axes.axisbelow: true
 axes.grid: False
 axes.edgecolor: DDDDDD
-axes.linewidth: 1.0
+axes.linewidth: 3.0
 
 axes.titlesize: xx-large
 axes.titleweight: bold
 axes.titlecolor: 333333
-axes.titlepad: 20.0
+axes.titlepad: 10.0
 
 axes.labelsize: medium
 axes.labelweight: bold
@@ -68,9 +73,9 @@ grid.linestyle: -
 grid.linewidth: 1.0
 grid.color: cbcbcb
 
-xtick.major.size: 4
+xtick.major.size: 0
 xtick.minor.size: 0
-ytick.major.size: 4
+ytick.major.size: 0
 ytick.minor.size: 0
 
 savefig.edgecolor: f0f0f0
